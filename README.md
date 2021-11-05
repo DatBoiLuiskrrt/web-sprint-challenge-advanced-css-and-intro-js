@@ -23,10 +23,10 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-   acessibility on the web is being inclusive to people that might not be able to see or distinguish colors. For acessibility we use semantic html tags, high contrast, alt tags, etc...
+   acessibility on the web is being inclusive to people that might not be able to see well and or distinguish colors. For acessibility we use semantic html tags, high contrast, alt tags, etc...
 
 2. Talk about 3 different things you can do to ensure your website is accessible.
-   having alt tags in images, semantic tags, high contrast.
+   having alt tags in images so that screen readesr can read over them, semantic tags for screen readers as well, high contrast so that readers do not have a hard time reading text.
 
 3. How would you explain the concept of a variable to someone new to programming?
    a variable is a place where we can store anything we want whether that be functions, or data.
