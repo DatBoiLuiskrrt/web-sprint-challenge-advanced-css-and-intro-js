@@ -170,17 +170,20 @@ nav span {
   height: 60vh;
   margin: 5% 0;
 }
-@media only screen and (min-width: 500px) {
-  .title-container div {
-    width: 80%;
-  }
-}
 
 .title-container div:hover {
   opacity: 80%;
 }
 .title-container hr {
-  width: 80%;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .title-container div {
+    width: 80%;
+  }
+  .title-container hr {
+    width: 80%;
+  }
 }
 button {
   padding: 1% 3%;
