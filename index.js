@@ -250,7 +250,7 @@ function get20s(arr) {
   }
   return deadArtists;
 }
-console.log(get20s(artists));
+// console.log(get20s(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
 1. Receive an array
@@ -264,27 +264,38 @@ function removeArtist(arr, index) {
   arr.splice(index, 1);
   return arr.length;
 }
-console.log(removeArtist(artists, 0));
+// console.log(removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
 2. Add this object of information to the end of the array
-  { 
-    id: 20,
-    name: Your Name Here, 
-    years: Your Birth Year - current day,
-    genre: Web Design, 
-    nationality: Your Nationality Here
-    bio: Add 1-2 sentences (or use lorem ipsum)
-  }  
+   
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+let obj = {
+  id: 20,
+  name: "Luis",
+  years: 1996 - 5,
+  genre: "Web Development",
+  nationality: "Mexican",
+  bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptas.",
+};
+function addArtist(array, id, name, years, genre, nationality, bio) {
+  const instance = {
+    id,
+    name,
+    years,
+    genre,
+    nationality,
+    bio,
+  };
+  array.push(instance);
+  return array;
 }
+// console.log(addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -293,10 +304,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  let total = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) {
+      total.push(array[i].name);
+    }
+  }
+  return total;
 }
-
+console.log(lotsOfArt(artists));
 /* ***** END OF TASKS ***** */
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
