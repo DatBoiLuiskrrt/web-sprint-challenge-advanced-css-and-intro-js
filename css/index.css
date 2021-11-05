@@ -151,6 +151,11 @@ nav a {
 nav span {
   border-left: 3px solid #626262;
 }
+@media (max-width: 1200px) {
+  nav a {
+    padding: 0 0.5em;
+  }
+}
 /*Title Section Styles*/
 .title-container {
   display: flex;
